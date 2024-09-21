@@ -1,0 +1,327 @@
+<!DOCTYPE html><html lang="en"><head>
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-1T5N2NTGF6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1T5N2NTGF6');
+</script>
+
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Fast and easy street viewing - Google Maps &amp; Streetview at its best. Formerly know as mapstreetview.com.">
+    <link rel="canonical" href="https://showmystreet.com/">  
+    <meta property="og:title" content="showmystreet.com">
+    <meta name="robots" content="noarchive">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="favicon.ico">
+    <meta name="twitter:image" content="http://showmystreet.com/favicon.ico">
+    <meta property="og:url" content="https://showmystreet.com">
+    <meta property="og:description" content="Fast and easy street viewing - Google Maps &amp; Streetview at its best. Click &amp; Go. Formerly know as mapstreetview.com.">
+    <meta name="theme-color" content="#000000">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+    <title>showmystreet.com - super easy Streetview with Google Maps</title>
+ 
+  </head>
+<body class="">
+
+<div id="address"><span></span></div>
+
+
+<div id="searchcontainer">
+    <form id="searchform">
+      <input id="searchinput" type="text" placeholder="search" autocomplete="off">  
+    </form>
+    <span id="icon_clear" class="hide">✕</span>
+    <img class="loading2" src="images/ajax-loader.gif">
+
+    <div class="autocompl">place not yet found, keep typing...</div>
+</div>
+
+<div id="menu">
+  <i id="clearmenu" class="material-icons clear"></i>  
+  <i id="menubackbutton" class="material-icons "></i>
+
+  <div id="menulist">
+    <div id="menulist_share" class="inactive">share this view</div>
+    <div id="menulist_random">random location</div>
+    <div id="menulist_history">history</div>
+      <a id="prev" class="inactive"><i class="material-icons"></i></a>
+      <a id="next" class="inactive"><i class="material-icons"></i></a>
+    <div id="menulist_satellite">satellite view<input type="checkbox" name="satellite" value="on"></div>
+    <div id="menulist_splitscreen">split screen<input type="checkbox" name="splitscreen" value="on"></div>
+    <div id="menulist_instantsearch">instant search<input type="checkbox" name="instantsearch" value="on"></div>
+    <div id="menulist_about">about</div>
+    <a id="logo" href="/" class="rotate"><span class="">showmystreet.com</span></a>
+
+  </div>
+
+  <div id="menu_content">
+
+    <div id="menu_content_about">
+
+      <p>this <a href="/">website</a> wants to make it <strong>super easy</strong> to explore Google Street View™ images</p>
+      <p>oh, <a href="/privacy.html" target="_blank">privacy &amp; cookies</a></p>
+      <p>this website is not affiliated with Google™</p>
+      <p><a href="mailto:nick@showmystreet.com">nick@showmystreet.com</a></p>
+      <p></p>
+    </div>
+
+    <div id="menu_content_share">
+      <span id="linklabel">link to copy/paste</span>
+      <a id="permalink" unselectable="on" target="_blank">
+        <span class="left">open</span>
+        <span id="newwindow">
+          <span id="nw_bg"></span>
+          <span id="nw_fg"></span>
+        </span>
+      </a>
+   
+      <input id="sharelink" readonly="readonly">
+      <span id="sociallabel">share on</span>
+      
+      <div id="sharebuttons">
+        <a href="mailto:&amp;subject=test&amp;body=testbody" target="_blank" id="emailurl"><span class="sharebuttons"><div id="emailimg"></div>email</span></a>
+        <a href="javascript:void(0)" id="facebookurl" target="_blank"><span class="sharebuttons"><div id="facebookimg"></div>facebook</span></a>
+        <a href="" target="_blank" id="twitterurl"><span class="sharebuttons"><div id="twitterimg"></div>twitter</span></a>
+        <a href="https://wa.me/?text=https%3A%2F%2Fshowmystreet.com" rel="publisher" target="_blank" id="whatsappurl"><span class="sharebuttons"><div id="whatsappimg"></div>whatsapp</span></a>
+      </div>
+    </div>
+
+
+    <div id="menu_content_random">
+      <a id="next_random" unselectable="on" class="">
+        <span class="next_random">next</span>
+        <span class="arrow">»</span>
+      </a>
+      <select id="countries">
+        <option value="all">all countries</option>
+        <option value=""> - - - - - - -</option>
+        <option value="ad">Andorra</option>
+        <option value="au">Australia</option>
+        <option value="ar">Argentina</option>
+        <option value="bd">Bangladesh</option>
+        <option value="be">Belgium</option>
+        <option value="bt">Bhutan</option>
+        <option value="bw">Botswana</option>
+        <option value="br">Brazil</option>
+        <option value="bg">Bulgaria</option>
+        <option value="kh">Cambodia</option>
+        <option value="ca">Canada</option>
+        <option value="cl">Chile</option>
+        <option value="hr">Croatia</option>
+        <option value="co">Colombia</option>
+        <option value="cz">Czech Republic</option>
+        <option value="dk">Denmark</option>
+        <option value="ae">Dubai</option>
+        <option value="ee">Estonia</option>
+        <option value="fi">Finland</option>
+        <option value="fr">France</option>
+        <option value="de">Germany</option>
+        <option value="gr">Greece</option>
+        <option value="hu">Hungary</option>
+        <option value="hk">Hong Kong</option>
+        <option value="is">Iceland</option>
+        <option value="id">Indonesia</option>
+        <option value="ie">Ireland</option>
+        <option value="it">Italy</option>
+        <option value="il">Israel</option>
+        <option value="jp">Japan</option>
+        <option value="lv">Latvia</option>
+        <option value="lt">Lithuania</option>
+        <option value="my">Malaysia</option>
+        <option value="mx">Mexico</option>
+        <option value="nl">Netherlands</option>
+        <option value="nz">New Zealand</option>
+        <option value="no">Norway</option>
+        <option value="pe">Peru</option>
+        <option value="pl">Poland</option>
+        <option value="pt">Portugal</option>
+        <option value="ro">Romania</option>
+        <option value="ru">Russia</option>
+        <option value="sg">Singapore</option>
+        <option value="sk">Slovakia</option>
+        <option value="si">Slovenia</option>
+        <option value="za">South Africa</option>
+        <option value="kr">South Korea</option>
+        <option value="es">Spain</option>
+        <option value="sz">Swaziland</option>
+        <option value="se">Sweden</option>
+        <option value="ch">Switzerland</option>
+        <option value="tw">Taiwan</option>
+        <option value="th">Thailand</option>
+        <option value="ua">Ukraine</option>
+        <option value="gb">United Kingdom</option>
+        <option value="us">United States</option>
+      </select>
+      <p>powered by <a href="https://randomstreetview.com" target="_blank">randomstreetview.com</a></p>
+    </div>
+
+    <div id="menu_content_history">
+      
+      <p>no history yet<br>
+         visit some places !</p>
+      <ul>
+       
+      </ul>
+ 
+
+    </div>
+
+
+  </div>
+
+</div>
+
+
+<div id="ctlOuter">
+
+
+  <div id="big">
+    <div id="pano_canvas"></div>
+
+  </div>
+
+  
+  <div id="small">
+    <div id="behindzoomin_s" class="noselect"></div>
+    <i id="zoomin_s" class="material-icons noselect"></i>
+    <div id="behindzoomout_s" class="noselect"></div>
+    <i id="zoomout_s" class="material-icons noselect"></i>
+    <img id="loading" src="images/loading.gif">
+
+    <div id="map_canvas"></div>
+    <div id="switchmap">
+      <div id="switchmap_icon"><img src="images/arrow_down_left.png" id="" alt="switch view" title="switch view"></div>
+      <div id="switchmap_hover">switch to <span>map</span> view</div>
+
+     </div>
+
+  </div>
+
+ <div id="behindmenubutton" class="noselect"></div>
+    <i id="menubutton" class="material-icons noselect"></i>
+    <div id="behindzoomin" class="noselect"></div>
+    <i id="zoomin" class="material-icons noselect"></i>
+    <div id="behindzoomout" class="noselect"></div>
+    <i id="zoomout" class="material-icons noselect"></i>
+
+
+  <div id="ctlUpper">
+    <div id="overlay_upper" class="init"></div> 
+   
+
+  </div>
+
+
+  <div class="splitter init" id="ctlSplitter">
+    <div id="overlay_splitter"></div> 
+    <div class="handle">
+      <span>
+        <div id="down"></div>
+        <p>drag me</p>
+        <div id="up"></div>
+      </span>
+    </div>
+  </div>
+
+
+  <div id="ctlLower">
+    <div id="overlay_lowerXXX"></div> 
+    <div id="overlay_lower2"></div> 
+    <div id="addressmobile"><span></span></div>
+    <div id="lookaround"><span></span></div>
+    <div id="initscreen">
+      <div><span class="click">click</span> on the <strong>map</strong> above to explore <strong>streetview</strong>
+     
+     <!--
+      <div id="searchcontainer2" class="init">
+    <form id="searchform2">
+    <input id="searchinput2" type="text" placeholder="search" />  
+  </form>
+     <img class="loading2" src="/img/ajax-loader.gif" />
+
+    <div class="autocompl">place not yet found, keep typing...</div>
+</div>
+-->
+      
+      <br><span class="or">or find out more...</span>
+      </div>
+      
+     <div id="destinations">
+         <div><a href="/guides/paris.html">Paris</a></div>
+         <div><a href="/guides/london.html">London</a></div>
+         <div><a href="/guides/newyork.html">New York</a></div>
+ <div><a href="/guides/tokyo.html">Tokyo</a></div>
+ <div><a href="/guides/berlin.html">Berlin</a></div>
+ <div><a href="/guides/vienna.html">Vienna</a></div>
+     </div>
+</div>
+  </div>
+
+</div>
+
+
+<div id="bottom-ad">
+  <div id="adclose" title="close ad">close ad <span>✕</span></div>
+  <div id="adcontainer"> 
+
+
+<script async="" src="js/adsbygoogle.js" crossorigin="anonymous"></script>
+<!-- showmystreet.com bottom -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4910046262930409" data-ad-slot="2884748241" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+  </div>
+</div>
+
+<div id="overlay"></div> 
+<div id="overlay_invisible"></div> 
+<div id="notice">sorry, no image found nearby</div> 
+
+<script src="js/jquery.min.js"></script>
+<!--<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>-->
+<script src="js/script_1.js">
+  </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyjvFglb3D28sR8-oBp03i-Cq8pddLO1Q&amp;libraries=geometry&amp;callback=initApp" type="text/javascript"></script>
+<script defer="" data-domain="showmystreet.com" src="js/script.js"></script>
+
+<script>
+
+window.testInterval  = setInterval(function() {
+   
+   var ele = $('.ft-reg-bubble-close-icon');
+   
+   if (ele) {
+     ele.click();
+      
+      if ($('.google-revocation-link-placeholder').length == 0) {
+         //clearInterval(testInterval);  
+         }  
+     }
+   
+},50);
+
+ setTimeout('clearInterval(testInterval);', 5000);
+
+</script>
+
+
+
+</body></html>
